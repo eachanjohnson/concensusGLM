@@ -1,19 +1,9 @@
 library(concensusGLM)
 
-if ( interactive() ) {
-
-  file_inputs <- list(data=file.path('tests/input/count-data.csv'),
+file_inputs <- list(data=file.path('tests/input/count-data.csv'),
                       annotation=file.path('tests/input/annotations.csv'))
-  controls    <- list(positive='BRD-K01507359',
+controls    <- list(positive='BRD-K01507359',
                       negative='untreated')
-
-} else {
-
-  file_inputs <- get_file_inputs(commandArgs())
-  controls <- get_controls(commandArgs())
-
-}
-
 
 dir_tree <- directoryTree(path=file.path('tests', 'output'))
 
