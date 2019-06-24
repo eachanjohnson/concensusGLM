@@ -114,7 +114,9 @@ scatter.concensusWorkflow <- function(x, by, ...) {
 
   println("Chunking elements", pyjoin(elements, ', '), '...')
 
-  new_concensus_workflow <- structure(workflows::scatter(x, elements=elements, by=by), class=c('concensusWorkflow', 'workflow'))
+  scattered_workflow <- workflows::scatter(x, elements=elements, by=by)
+
+  new_concensus_workflow <- structure(scattered_workflow, class=c('concensusWorkflow', 'workflow'))
 
   return ( new_concensus_workflow )
 
