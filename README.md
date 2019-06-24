@@ -25,7 +25,7 @@ This will install the library in your default path. Check `.libPaths()` to see w
 
 The script contained in `exec/concensusGLM.R` allows for a lot of imagined use cases.
 
-If you use the `--sge` option, you need to provide the path on your computer to the `exec/sge-templae.sh` template submission script, which you may need to edit for your particular setup.
+If you use the `--sge` option, you need to provide the path on your computer to the `exec/sge-template.sh` template submission script, which you may need to edit for your particular setup.
 
 ```
 Usage:
@@ -67,7 +67,7 @@ You can also `scatter` a `concenusWorkflow` based on categorical columns in the 
 
 ## Citation
 
-Eachan O. Johnson *et. al.*, [New inhibitors of *Mycobacterium tuberculosis* identified using systems chemical biology](https://doi.org/10.1101/396440), *bioRxiv*, Aug 2018, doi: [10.1101/396440](https://doi.org/10.1101/396440)
+Eachan O. Johnson *et. al.*, [Large-scale chemical-genetics yields new M. tuberculosis inhibitor classes](https://doi.org/10.1101/396440), *Nature*, July 2019, doi: [10.1038/s41586-019-1315-z](https://doi.org/10.1038/s41586-019-1315-z)
 
 ## See also
 

@@ -112,7 +112,7 @@ scatter.concensusWorkflow <- function(x, by, ...) {
   elements <- intersect(c('data', 'model_parameters', 'resampled', 'mean_variance_relationship'),
                         names(x$pipelines[[1]]$data))
 
-  println("Chunking elements", pyjoin(elements, ', '), '...')
+  println("Chunking elements:", pyjoin(elements, ', '), '...')
 
   scattered_workflow <- workflows::scatter(x, elements=elements, by=by)
 
