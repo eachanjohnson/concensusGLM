@@ -165,8 +165,9 @@ getBatchEffects.concensusDataSet <- function(x, grouping=c('compound', 'concentr
   x$batch_effect_model <- glm(model_formula,
                               MASS::negative.binomial(1 / x$dispersion$rough_dispersion), untreated_data) %except% NA
 
-  if ( !is.na(x$batch_effect_model) &  !is.null(x$batch_effect_model) ) {
-    x$data <- x$data %>% dplyr::mutate(predicted_null_count=predict(x$batch_effect_model, ., type='response'))
+  if ( !is.na(x$batch_effect_model) && !is.null(x$batch_effect_model) ) {
+    x$data <- x$data %>% dplyr::mutate(predicted_null_count=predict(x$batch_effect_model, ., type='response'),
+                                       predicted_null_count=ifelse(predicted_null_count < 1e-9, 1, predicted_null_count))
     x$batch_effect_model <- trim_glm(x$batch_effect_model)  # make sure this isn't gigantic!
   } else
     x$data <- x$data %>% dplyr::mutate(predicted_null_count=1)
