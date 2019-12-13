@@ -316,11 +316,12 @@ getFinalModel.concensusDataSet <- function(x, conditions=c('compound', 'concentr
           'conditions as defined', pyjoin(conditions, ' + '))
 
   x$model_parameters <- x$data %>%
-    #dplyr::filter(!negative_control) %>%
+    dplyr::ungroup() %>%
+    dplyr::mutate(condition_group=ifelse(negative_control, paste0('dummy_', negative_level), condition_group)) %>%
     dplyr::group_by_(.dots=c(grouping, conditions, 'condition_group')) %>%
     dplyr::do((glm(count ~ 0 + offset(log(predicted_null_count)) + condition_group,
                    family=MASS::negative.binomial(1 / nb_dispersion),
-                   data= dplyr::bind_rows(., negative_controls) %>%
+                   data=dplyr::bind_rows(., negative_controls) %>%
                      dplyr::mutate(condition_group=factor(condition_group) %>% relevel(ref=negative_level)),
                    y=FALSE) %>%
                  broom::tidy() %>%
