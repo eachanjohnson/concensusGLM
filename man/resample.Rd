@@ -2,9 +2,9 @@
 % Please edit documentation in R/concensus-statistical-methods.R
 \name{resample}
 \alias{resample}
-\alias{resample.concensusDataSet}
-\alias{resample.concensusWorkflow}
 \alias{resample.default}
+\alias{resample.concensusWorkflow}
+\alias{resample.concensusDataSet}
 \title{Make fake data from resampled controls}
 \usage{
 resample(x, ...)
@@ -13,9 +13,9 @@ resample(x, ...)
 
 \method{resample}{concensusWorkflow}(x, ...)
 
-\method{resample}{concensusDataSet}(x, n_replicates = 2, n_samples = 10000,
-  prevalence = 0.5, grouping = c("id", "plate_name", "well"),
-  positive_control. = NULL, ...)
+\method{resample}{concensusDataSet}(x, n_replicates = 2,
+  n_samples = 10000, prevalence = 0.5, grouping = c("id",
+  "plate_name", "well"), positive_control. = NULL, ...)
 }
 \arguments{
 \item{x}{concensusWorkflow or concensusDataSet.}
@@ -41,4 +41,3 @@ Make fake data from resampled controls.
 \details{
 None.
 }
-

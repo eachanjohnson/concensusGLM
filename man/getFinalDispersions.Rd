@@ -2,9 +2,9 @@
 % Please edit documentation in R/concensus-statistical-methods.R
 \name{getFinalDispersions}
 \alias{getFinalDispersions}
-\alias{getFinalDispersions.concensusDataSet}
-\alias{getFinalDispersions.concensusWorkflow}
 \alias{getFinalDispersions.default}
+\alias{getFinalDispersions.concensusWorkflow}
+\alias{getFinalDispersions.concensusDataSet}
 \title{Estimate Negative Binomial dispersion paramteter taking into account batch effects}
 \usage{
 getFinalDispersions(x, ...)
@@ -43,4 +43,3 @@ the columns of the \code{dispersion} attribute of \code{concensusDataSet}.
 \seealso{
 \link{nlm}, \link{glm}
 }
-

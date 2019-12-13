@@ -23,4 +23,3 @@ Allows parallelization of downstream analysis.
 \seealso{
 \link{scatter}
 }
-

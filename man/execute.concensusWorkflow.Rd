@@ -4,8 +4,9 @@
 \alias{execute.concensusWorkflow}
 \title{Execute concensusWorkflow}
 \usage{
-\method{execute}{concensusWorkflow}(x, locality = "local", parallel = FALSE,
-  clobber = FALSE, submit_script = file.path("exec/sge-template.sh"), ...)
+\method{execute}{concensusWorkflow}(x, locality = "local",
+  parallel = FALSE, clobber = FALSE,
+  submit_script = file.path("exec/sge-template.sh"), ...)
 }
 \arguments{
 \item{x}{concensusWorkflow.}
@@ -29,4 +30,3 @@ Execute concensusWorkflow analysis pipeline.
 \seealso{
 \link{execute}
 }
-

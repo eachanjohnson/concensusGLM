@@ -28,4 +28,3 @@ Serialize ConcensusDataSet to disk under \code{filename}. A wrapper to \code{wri
 \seealso{
 \link{saveRDS}, \link{write_workflow}
 }
-

@@ -15,4 +15,3 @@ list of class "directoryTree"
 \description{
 Set up a directory tree for ConcensusGLM
 }
-

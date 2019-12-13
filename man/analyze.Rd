@@ -2,9 +2,9 @@
 % Please edit documentation in R/concensus-default-workflow.R
 \name{analyze}
 \alias{analyze}
+\alias{analyze.default}
 \alias{analyze.concensusDataSet}
 \alias{analyze.concensusWorkflow}
-\alias{analyze.default}
 \title{Run concensusGLM analysis}
 \usage{
 analyze(x, ...)
@@ -12,12 +12,13 @@ analyze(x, ...)
 \method{analyze}{default}(x, ...)
 
 \method{analyze}{concensusDataSet}(x, grouping = c("compound",
-  "concentration", "strain"), conditions = c("compound", "concentration"),
-  scattering = "strain", ...)
+  "concentration", "strain"), conditions = c("compound",
+  "concentration"), scattering = "strain", ...)
 
 \method{analyze}{concensusWorkflow}(x, grouping = c("compound",
-  "concentration", "strain"), conditions = c("compound", "concentration"),
-  scattering = "strain", locality = "local", parallel = FALSE, ...)
+  "concentration", "strain"), conditions = c("compound",
+  "concentration"), scattering = "strain", locality = "local",
+  parallel = FALSE, ...)
 }
 \arguments{
 \item{x}{concensusWorkflow or concensusDataSet.}
@@ -36,4 +37,3 @@ concensusWorkflow or concensusDataSet with a new \code{mean_variance_relationshi
 \description{
 Do all caluclations on count data to calculate batch effects, dispersions, and final effect sizes and p-values.
 }
-

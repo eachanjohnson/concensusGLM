@@ -17,4 +17,3 @@
 \description{
 Print summary stitistics of a ConcensusDataSet to the console
 }
-

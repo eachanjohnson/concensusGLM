@@ -2,9 +2,9 @@
 % Please edit documentation in R/concensus-statistical-methods.R
 \name{getRoughDispersions}
 \alias{getRoughDispersions}
-\alias{getRoughDispersions.concensusDataSet}
-\alias{getRoughDispersions.concensusWorkflow}
 \alias{getRoughDispersions.default}
+\alias{getRoughDispersions.concensusWorkflow}
+\alias{getRoughDispersions.concensusDataSet}
 \title{Get rough Negative Binomial dispersion parameters}
 \usage{
 getRoughDispersions(x, ...)
@@ -13,8 +13,8 @@ getRoughDispersions(x, ...)
 
 \method{getRoughDispersions}{concensusWorkflow}(x, ...)
 
-\method{getRoughDispersions}{concensusDataSet}(x, grouping = c("compound",
-  "concentration", "strain"), ...)
+\method{getRoughDispersions}{concensusDataSet}(x,
+  grouping = c("compound", "concentration", "strain"), ...)
 }
 \arguments{
 \item{x}{concensusWorkflow or concensusDataSet.}
@@ -35,4 +35,3 @@ where K is count, \eqn{\mu} is the mean count, and \eqn{\alpha} is the Negative 
 The result is usually way off the final dispersion, but at least gives something reasonable to work from when estimating batch
 effects using a Negative Binomial GLM.
 }
-

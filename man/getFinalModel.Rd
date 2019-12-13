@@ -2,9 +2,9 @@
 % Please edit documentation in R/concensus-statistical-methods.R
 \name{getFinalModel}
 \alias{getFinalModel}
-\alias{getFinalModel.concensusDataSet}
-\alias{getFinalModel.concensusWorkflow}
 \alias{getFinalModel.default}
+\alias{getFinalModel.concensusWorkflow}
+\alias{getFinalModel.concensusDataSet}
 \title{Fit final model}
 \usage{
 getFinalModel(x, ...)
@@ -49,4 +49,3 @@ coefficient estimates can be intreprested as log(fold change) realtive to the ne
 \seealso{
 \link{glm}
 }
-

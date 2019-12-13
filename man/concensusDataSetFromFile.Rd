@@ -70,4 +70,3 @@ that there are at least 2 negative control observations.
 \seealso{
 \link{newWorkflow}, \link{pipeline}, \link{concensusDataSetFromFile}
 }
-

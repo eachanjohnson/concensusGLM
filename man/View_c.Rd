@@ -24,4 +24,3 @@ Invoke a spreadsheet-style data viewer on a Concensus R object.
 \seealso{
 \link{View}
 }
-

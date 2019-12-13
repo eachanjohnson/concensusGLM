@@ -20,4 +20,3 @@ Gather concensusWorkflow back into a single pipeline.
 \seealso{
 \link{gather}
 }
-

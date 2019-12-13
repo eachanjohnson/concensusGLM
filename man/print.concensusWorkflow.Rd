@@ -14,4 +14,3 @@
 \description{
 Print data of a ConcensusWorkflow to the console
 }
-

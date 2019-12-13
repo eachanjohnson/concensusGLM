@@ -2,15 +2,16 @@
 % Please edit documentation in R/concensus-methods.R
 \name{clean}
 \alias{clean}
-\alias{clean.data.frame}
 \alias{clean.default}
+\alias{clean.data.frame}
 \title{Clean up ConcensusGLM data}
 \usage{
 clean(x, ...)
 
 \method{clean}{default}(x, ...)
 
-\method{clean}{data.frame}(x, threshold = 100, plate_fraction = 0.6, ...)
+\method{clean}{data.frame}(x, threshold = 100, plate_fraction = 0.6,
+  ...)
 }
 \arguments{
 \item{x}{data.frame to clean.}
@@ -27,4 +28,3 @@ Cleaned data.frame
 Clean up ConcensusGLM data. Removes strains with total count across data below \code{threshold} and plates
 with total counts below 1000 x \code{threshold}
 }
-

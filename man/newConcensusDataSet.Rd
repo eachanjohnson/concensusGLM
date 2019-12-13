@@ -25,4 +25,3 @@ Set up analysis container for ConcensusGLM. This is the workhorse function; most
 \seealso{
 \link{workflows::newWorkflow}, \link{concensusDataSetFromFile}
 }
-
